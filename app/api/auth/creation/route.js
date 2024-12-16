@@ -28,5 +28,5 @@ export async function GET() {
     });
   }
 
-  return NextResponse.redirect("http://localhost:3000/shop/");
+  return NextResponse.redirect("https://tuno-smoky.vercel.app/shop");
 }
