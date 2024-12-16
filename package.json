@@ -1,20 +1,48 @@
 {
-  "name": "tuno",
+  "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "tsc && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "postinstall": "prisma generate",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.0"
+    "@kinde-oss/kinde-auth-nextjs": "^2.4.6",
+    "@prisma/client": "^6.0.1",
+    "@radix-ui/react-avatar": "^1.1.2",
+    "@radix-ui/react-label": "^2.1.1",
+    "@radix-ui/react-navigation-menu": "^1.2.2",
+    "@radix-ui/react-popover": "^1.1.3",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@supabase/supabase-js": "^2.47.8",
+    "axios": "^1.7.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "embla-carousel-react": "^8.5.1",
+    "framer-motion": "^11.14.4",
+    "lucide-react": "^0.468.0",
+    "motion": "^11.14.4",
+    "next": "15.1.0",
+    "next-themes": "^0.4.4",
+    "react": "^18.3.1",
+    "react-day-picker": "^8.10.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "prisma": "^6.0.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
